@@ -1,0 +1,131 @@
+* {
+  font-family: 'Comfortaa', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to top, #55EFCB 0%, #5BCAFF 100%);
+    min-height: 100vh
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.664);
+  height: 8vh;
+}
+
+header h1 {
+  font-size: 2.5em;
+    font-family: 'Comfortaa', cursive;
+    color: #524f4e;
+    font-weight: 300;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* border: 2px solid rgb(30, 203, 255);
+  border-radius: 122px; */
+}
+
+.timer_block {
+  width: 20vh;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.time {
+  /* background-color: #780075; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.664);
+  color: white;
+  height: 20vh;
+  font-size: 95px;
+}
+
+.title {
+  background: #006577;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, .4);
+  /* border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px; */
+  text-align: center;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 50px;
+  /* margin: 10px 20px; */
+  position: relative;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: none;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.button:before, .button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.button:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.button:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+.button:hover:before, 
+.button:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.button:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+.button:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+.button:hover {
+  background: rgba(255, 255, 255, .2);
+}
