@@ -1,1 +1,1 @@
-# Stopwatch on base Js..
+# Simple stopwatch on base Javascript..
